@@ -5,7 +5,7 @@ import SideNav from "../Shared/SideNav";
 const Home = () => {
   return (
     <div>
-          <Header></Header>
+          {/* <Header></Header> */}
           <SideNav></SideNav>
     </div>
   );
