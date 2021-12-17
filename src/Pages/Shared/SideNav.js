@@ -11,38 +11,18 @@ import {
 import { NavLink } from "react-router-dom";
 
 const SideNav = () => {
-  const [changeTitle, setChangeTitle] = useState(false);
-  const titles = [
-    {
-      title: "Skrate",
-      key: 1,
-    },
-    {
-      title: "Dashboard",
-      key: 2,
-    },
-    {
-      title: "Achievements",
-      key: 3,
-    },
-    {
-      title: "Jobs",
-      key: 4,
-    },
-    {
-      title: "Profile",
-      key: 5,
-    },
-  ];
-  const title = (key) => {
-    console.log(key);
+  const [changeTitle, setChangeTitle] = useState('Skrate');
+
+  const title = (event,title) => {
+    console.log(title);
+    setChangeTitle(title);
   }
   return (
     <div className=" fixed bg-gray-700 top-0 left-0 h-screen w-52 p-9">
       <div>
-        <p className="font-medium text-3xl">Skrate</p>
+        <p className="font-medium text-3xl">{changeTitle}</p>
       </div>
-      <span className="block my-16">
+      <span className="block my-16" key={1}>
         <NavLink
           className={({ isActive }) =>
             isActive
@@ -51,10 +31,16 @@ const SideNav = () => {
           }
           to="/home"
         >
-          <FontAwesomeIcon key={1} onClick={()=>{title(key)}} className="text-3xl text-gray-800" icon={faHome} />
+          <FontAwesomeIcon
+            onClick={(event) => {
+              title(event,"Skrate");
+            }}
+            className="text-3xl text-gray-800"
+            icon={faHome}
+          />
         </NavLink>
       </span>
-      <span className="block mb-14" key={2}>
+      <span className="block mb-14">
         <NavLink
           to="/dashboard"
           className={({ isActive }) =>
@@ -62,6 +48,9 @@ const SideNav = () => {
           }
         >
           <FontAwesomeIcon
+            onClick={(event) => {
+              title(event,"Dashboard");
+            }}
             className="text-3xl text-gray-800"
             icon={faColumns}
           />
