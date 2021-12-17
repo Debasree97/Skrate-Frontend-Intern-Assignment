@@ -12,7 +12,7 @@ const JobPosts = (props) => {
     window.alert("A Button Was Clicked");
   };
   return (
-    <div className=" grid grid-cols-6 ">
+    <div className=" grid md:grid-cols-6 ">
       <div className="flex items-center">
         {organization_name === "Amazon" && (
           <img

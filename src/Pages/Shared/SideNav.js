@@ -16,9 +16,10 @@ const SideNav = () => {
   const title = (event,title) => {
     console.log(title);
     setChangeTitle(title);
+    console.log(changeTitle);
   }
   return (
-    <div className="fixed bg-gray-700 top-0 left-0 h-screen w-48 p-9">
+    <div className=" fixed  top-0 left-0 h-screen w-44 xl:w-52 p-9">
       <div>
         <p className="font-medium text-3xl">{changeTitle}</p>
       </div>
@@ -33,9 +34,9 @@ const SideNav = () => {
         >
           <FontAwesomeIcon
             onClick={(event) => {
-              title(event,"Skrate");
+              title(event, "Skrate");
             }}
-            className="text-3xl text-gray-800"
+            className="text-3xl text-darkgray"
             icon={faHome}
           />
         </NavLink>
@@ -49,9 +50,9 @@ const SideNav = () => {
         >
           <FontAwesomeIcon
             onClick={(event) => {
-              title(event,"Dashboard");
+              title(event, "Dashboard");
             }}
-            className="text-3xl text-gray-800"
+            className="text-3xl text-darkgray"
             icon={faColumns}
           />
         </NavLink>
@@ -64,7 +65,7 @@ const SideNav = () => {
           to="/achievement"
         >
           <FontAwesomeIcon
-            className="text-3xl text-gray-800"
+            className="text-3xl text-darkgray"
             icon={faGraduationCap}
           />
         </NavLink>
@@ -77,7 +78,7 @@ const SideNav = () => {
           to="/job"
         >
           <FontAwesomeIcon
-            className="text-3xl text-gray-800"
+            className="text-3xl text-darkgray"
             icon={faBriefcase}
           />
         </NavLink>
@@ -89,7 +90,7 @@ const SideNav = () => {
           }
           to="/profile"
         >
-          <FontAwesomeIcon className="text-3xl text-gray-800" icon={faUser} />
+          <FontAwesomeIcon className="text-3xl text-darkgray" icon={faUser} />
         </NavLink>
       </span>
     </div>

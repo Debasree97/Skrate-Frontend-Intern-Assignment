@@ -11,7 +11,7 @@ const Sessions = (props) => {
   };
   return (
     <div>
-      <div className="grid grid-cols-7 space-y-2 gap-2">
+      <div className="grid md:grid-cols-7 space-y-2 gap-2">
         <div className="flex items-center">
           {mentor_name === "Himanshu" ? (
             <img
@@ -38,16 +38,16 @@ const Sessions = (props) => {
           </p>
         </div>
         <div className="col-span-2 flex flex-col items-center ">
-          <p className="text-xl font-medium">{timings}</p>
+          <p className="xl:text-xl text-lg font-medium text-center">{timings}</p>
           <p className="leading-9">{date}</p>
         </div>
         <div className="flex justify-between items-center col-span-2">
           {mentor_name === "Himanshu" ? (
-            <div className="bg-green-400 h-12 w-24 flex justify-center items-center rounded-lg">
+            <div className="bg-pink h-12 w-24 flex justify-center items-center rounded-lg">
               {session_type}
             </div>
           ) : (
-            <div className="bg-rose-400 h-12 w-24 flex justify-center items-center rounded-lg">
+            <div className="bg-skyblue h-12 w-24 flex justify-center items-center rounded-lg">
               {session_type}
             </div>
           )}
