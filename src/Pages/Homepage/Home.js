@@ -16,8 +16,8 @@ const Home = () => {
       <Header name={infoData?.full_name}></Header>
       <SideNav></SideNav>
 
-      <div className=" absolute top-28 left-44 grid grid-cols-1 col-span-12 lg:grid-cols-2 lg:col-span-6 lg:space-x-12 mb-10 lg:mr-16 space-y-6 lg:space-y-0">
-        <div className="space-y-6 w-auto">
+      <div className=" absolute top-28 left-44 grid grid-cols-1 col-span-12 lg:grid-cols-2 lg:col-span-6 lg:space-x-16 mb-10 lg:mr-16 space-y-6 lg:space-y-0">
+        <div className="space-y-6">
           <div className="p-6 rounded-3xl font-medium border border-bordergray">
             <div className="flex flex-col md:flex-row text-center justify-between">
               <p className="text-3xl">Overview</p>
