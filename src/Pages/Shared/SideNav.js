@@ -18,7 +18,7 @@ const SideNav = () => {
     setChangeTitle(title);
   }
   return (
-    <div className=" fixed bg-gray-700 top-0 left-0 h-screen w-52 p-9">
+    <div className="fixed bg-gray-700 top-0 left-0 h-screen w-48 p-9">
       <div>
         <p className="font-medium text-3xl">{changeTitle}</p>
       </div>

@@ -3,7 +3,7 @@ import thumbnail from "../../../images/thumbnail-1.png"
 
 const Header = () => {
     return (
-      <div className="fixed right-0 top-0 p-9 bg-orange-300">
+      <div className="absolute right-0 top-0 p-9 bg-orange-300">
         <div className="flex flex-row  items-center">
           <img
             className="rounded-full object-contain w-12 sm:mr-4"

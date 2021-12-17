@@ -12,8 +12,8 @@ const JobPosts = (props) => {
     window.alert("A Button Was Clicked");
   };
   return (
-    <div className="grid grid-cols-5 space-y-2 gap-2">
-      <div>
+    <div className=" grid grid-cols-6 ">
+      <div className="flex items-center">
         {organization_name === "Amazon" && (
           <img
             src={thumbnail1}
@@ -43,15 +43,13 @@ const JobPosts = (props) => {
           ></img>
         )}
       </div>
-      <div>
-        <p>{role}</p>
-        <p>{organization_name}</p>
-        <p>{location}</p>
+      <div className="col-span-3">
+        <p className="text-xl font-medium">{role}</p>
+        <p className="text-md">{organization_name}</p>
+        <p className="text-sm">{location}</p>
       </div>
-      <div>
-        <p>{date_posted}</p>
-      </div>
-      <div>
+      <div className="flex justify-between items-center col-span-2">
+        <span className="text-xl">{date_posted}</span>
         <button>
           <FontAwesomeIcon onClick={handleArrowClick} icon={faArrowRight} />
         </button>
