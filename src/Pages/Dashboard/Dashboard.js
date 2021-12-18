@@ -13,11 +13,11 @@ const Dashboard = () => {
     <div>
       <SideNav></SideNav>
       <Header name={infoData?.full_name}></Header>
-      <div className="absolute top-32 left-44 flex flex-col lg:flex-row gap-y-0 lg:sgap-y-14 lg:space-x-14 lg:mr-16 p-6">
-        <div className=" border border-bordergray sm:px-36 md:px-48 rounded-3xl py-52">
+      <div className="absolute top-32 left-44 flex flex-col lg:flex-row gap-y-0 lg:gap-y-14 lg:gap-x-14 lg:mr-16 p-6 place-content-stretch mb-5">
+        <div className=" border border-bordergray px-16 sm:px-32 xl:px-48 rounded-3xl py-48 ">
           <p className="font-9xl">Dashboard</p>
         </div>
-        <div className=" border border-bordergray sm:px-36 md:px-48 rounded-3xl py-52">
+        <div className=" border border-bordergray px-16 sm:px-32 xl:px-48 rounded-3xl py-48">
           <p className="font-9xl">Dashboard</p>
         </div>
       </div>

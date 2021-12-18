@@ -19,7 +19,7 @@ const SideNav = () => {
     console.log(changeTitle);
   }
   return (
-    <div className=" fixed  top-0 left-0 h-screen w-44 xl:w-52 p-9">
+    <div className=" fixed  top-0 left-0 h-screen w-36 md:w-44 xl:w-52 p-5">
       <div>
         <p className="font-medium text-3xl">{changeTitle}</p>
       </div>

@@ -11,24 +11,26 @@ const Sessions = (props) => {
   };
   return (
     <div>
-      <div className="grid md:grid-cols-7 space-y-2 gap-2">
+      <div className="grid xl:grid-cols-8 lg:grid-cols-5 sm:grid-cols-8 grid-cols-5 cols-span-6 p-2 rounded-2xl gap-2 hover:bg-gray">
         <div className="flex items-center">
           {mentor_name === "Himanshu" ? (
             <img
               src={thumbnail1}
-              className="rounded-full object-contain w-8 "
+              className="rounded-full object-contain w-12 "
               alt=""
             ></img>
           ) : (
             <img
               src={thumbnail2}
-              className="rounded-full object-contain w-8"
+              className="rounded-full object-contain w-12"
               alt=""
             ></img>
           )}
         </div>
-        <div className="col-span-2">
-          <p className="text-xl font-medium ">{mentor_name}</p>
+        <div className="xl:col-span-2 lg:col-span-3 sm:col-span-2 col-span-3">
+          <p className="md:text-xl md:font-medium font-semibold">
+            {mentor_name}
+          </p>
           <p>
             {mentor_name === "Himanshu" ? (
               <span className="leading-9">Flutter</span>
@@ -37,11 +39,13 @@ const Sessions = (props) => {
             )}
           </p>
         </div>
-        <div className="col-span-2 flex flex-col items-center ">
-          <p className="xl:text-xl text-lg font-medium text-center">{timings}</p>
+        <div className="col-span-3 flex flex-col xl:items-center items-start">
+          <p className="md:text-xl md:font-medium font-semibold text-center">
+            {timings}
+          </p>
           <p className="leading-9">{date}</p>
         </div>
-        <div className="flex justify-between items-center col-span-2">
+        <div className="flex justify-between items-center col-span-2 ">
           {mentor_name === "Himanshu" ? (
             <div className="bg-pink h-12 w-24 flex justify-center items-center rounded-lg">
               {session_type}
